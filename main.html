@@ -1,16 +1,138 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Compact Cards Gallery</title>
+    
+    <!-- Bootstrap 4.3.1 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    
+    <style>
+        /* Custom Styling */
+        body {
+            background-color: #f8f9fa;
+        }
+        .gallery-heading {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            border-radius: 10px 10px 0 0;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body {
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- Gallery Header -->
+    <div class="container">
+        <h2 class="gallery-heading">CARDS GALLERY</h2>
+        
+        <!-- Cards Row -->
+        <div class="row">
+            
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <a href="https://source.unsplash.com/400x300/?nature" data-lightbox="gallery">
+                        <img src="https://source.unsplash.com/400x300/?nature" class="card-img-top" alt="Nature Image">
+                    </a>
+                    <div class="card-body">
+                        <h6>Lorem Ipsum</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <a href="https://source.unsplash.com/400x300/?mountains" data-lightbox="gallery">
+                        <img src="https://source.unsplash.com/400x300/?mountains" class="card-img-top" alt="Mountains Image">
+                    </a>
+                    <div class="card-body">
+                        <h6>Lorem Ipsum</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <a href="https://source.unsplash.com/400x300/?city" data-lightbox="gallery">
+                        <img src="https://source.unsplash.com/400x300/?city" class="card-img-top" alt="City Image">
+                    </a>
+                    <div class="card-body">
+                        <h6>Lorem Ipsum</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <a href="https://source.unsplash.com/400x300/?beach" data-lightbox="gallery">
+                        <img src="https://source.unsplash.com/400x300/?beach" class="card-img-top" alt="Beach Image">
+                    </a>
+                    <div class="card-body">
+                        <h6>Lorem Ipsum</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <a href="https://source.unsplash.com/400x300/?forest" data-lightbox="gallery">
+                        <img src="https://source.unsplash.com/400x300/?forest" class="card-img-top" alt="Forest Image">
+                    </a>
+                    <div class="card-body">
+                        <h6>Lorem Ipsum</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <a href="https://source.unsplash.com/400x300/?skyline" data-lightbox="gallery">
+                        <img src="https://source.unsplash.com/400x300/?skyline" class="card-img-top" alt="Skyline Image">
+                    </a>
+                    <div class="card-body">
+                        <h6>Lorem Ipsum</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap & Lightbox JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
 </body>
-
 </html>
